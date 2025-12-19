@@ -3,7 +3,7 @@
 
 clear; clc;
 
-filename = 'Link1 negativo.csv';
+filename = 'Link1.csv';
 
 % Detect import options
 opts = detectImportOptions(filename);
@@ -23,7 +23,7 @@ figure;
 plot(data, 'LineWidth', 2);
 grid on;
 
-title('Link2.csv Data Plot');
+title('Link1.csv Data Plot');
 xlabel('Index');
 ylabel('Pulses');
 
@@ -31,4 +31,5 @@ ylabel('Pulses');
 fprintf('Loaded %d data points.\n', length(data));
 fprintf('Min value: %g\n', min(data));
 fprintf('Max value: %g\n', max(data));
+
 fprintf('Mean value: %g\n', mean(data));
